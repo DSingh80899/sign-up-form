@@ -8,6 +8,7 @@
 
 </head>
 <body>
+
     <div class="left">
 
         <div class="hero-text">
@@ -16,8 +17,56 @@
         </div>
         <div class="footer">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/GubApA69UZM">Unsplash</a></div>
     </div>
+
     <div class="right">
-        <form action="" method="post"></form>
+        <div class="first">
+
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+            
+        </div>
+
+        <div class="second">
+            <form id="my-form" action="" method="post">
+
+                <div class="form-input" id="first">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="John" required>
+                </div>
+
+                <div class="form-input" id="second">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Doe" required>
+                </div>
+                
+                <div class="form-input" id="third">
+                    <label for="user_email">Email Address:</label>
+                    <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-input" id="fourth">
+                    <label for="user_tel">Phone number:</label>
+                    <input type="tel" id="user_tel" name="user_tel" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+
+                <div class="form-input" id="fifth">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" min="6" max="15" required>
+                </div>
+
+                <div class="form-input" id="sixth">
+                    <label for="password2">Confirm Password:</label>
+                    <input type="password" id="password2" name="password2" min="6" max="15" required>
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="third">
+            <button type="submit" form="my-form">Submit</button>
+            <p>Already have an Account? <a>Log in</a></p>
+        </div>
     </div>
+
 </body>
 </html>

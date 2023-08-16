@@ -80,6 +80,17 @@ body{
     background-position: center;
 }
 
+.hero-text, .footer{
+    width: 100%;
+    padding: 10px;
+    background-color:  rgba(0, 0, 0, 0.3);
+    
+}
+
+.footer{
+    text-align: center;
+}
+
 .hero-text{
     display: flex;
     align-items: center;
@@ -87,6 +98,7 @@ body{
     gap: 10px;
     
 }
+
 
 h1{
     font-family: Norse-Bold;
@@ -114,3 +126,48 @@ a:link {
   a:hover {
     color: hotpink;
   }
+
+/*Right side*/
+
+.right{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 70vw;
+    background: linear-gradient(var(--silver),var(--drab-dark-brown) , var(--silver));
+}
+
+.first, .second, .third{
+    flex: 1;
+}
+.first{
+    font-size: xx-large;
+    padding-top: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0;
+    margin: 0;
+}
+.first>p{
+    padding-bottom: 1.5em;
+}
+
+.second{
+    display: flex;
+
+}
+form{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 40%;
+}
